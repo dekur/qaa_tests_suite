@@ -5,8 +5,8 @@ from .locators import ProductPageLocators
 class CatalogPage(BasePage):
 
         def click_on_add_to_basket_button(self):
-            button1 = self.browser.find_element(*ProductPageLocators.add_to_basket_button)
-            button1.click()
+            add_to_basket_button = self.browser.find_element(*ProductPageLocators.add_to_basket_button)
+            add_to_basket_button.click()
 
         def check_success_message(self):
             element = self.browser.find_element(*ProductPageLocators.product_name_in_success_msg)
@@ -21,12 +21,9 @@ class CatalogPage(BasePage):
             assert self.browser.find_element(*ProductPageLocators.success_message)
 
         def click_on_basket_button(self):
-            button1 = self.browser.find_element(*ProductPageLocators.basket_button)
-            button1.click()
+            basket_button = self.browser.find_element(*ProductPageLocators.basket_button)
+            basket_button.click()
 
         def should_be_on_basket_page(self):
             element = self.browser.find_element(*ProductPageLocators.text_on_basket_page)
             assert element.text == "Корзина"
-
-
-

@@ -44,32 +44,32 @@ class BasePage():
         assert self.browser.find_element(*BasePageLocators.login_link)
 
     def click_on_login_or_register(self):
-        button1 = self.browser.find_element(*BasePageLocators.login_link)
-        button1.click()
+        login_or_register_button = self.browser.find_element(*BasePageLocators.login_link)
+        login_or_register_button.click()
 
     def should_be_on_login_page(self):
         element = self.browser.find_element(*BasePageLocators.text_on_login_page)
         assert element.text == "Войти"
 
     def write_email_register(self):
-        input1 = self.browser.find_element(*LoginPageLocators.email_register)
-        input1.send_keys("test12757354341334@gmail.com")
+        email_register_input = self.browser.find_element(*LoginPageLocators.email_register)
+        email_register_input.send_keys("test12757354341334@gmail.com")
 
     def write_incorrect_email_register(self):
-        input1 = self.browser.find_element(*LoginPageLocators.email_register)
-        input1.send_keys("test12757354341334")
+        email_register_input = self.browser.find_element(*LoginPageLocators.email_register)
+        email_register_input.send_keys("test12757354341334")
 
     def write_password_register(self):
-        input1 = self.browser.find_element(*LoginPageLocators.password_register)
-        input1.send_keys("gggg12357354163425")
+        password_register_input = self.browser.find_element(*LoginPageLocators.password_register)
+        password_register_input.send_keys("gggg12357354163425")
 
     def confirm_password_register(self):
-        input1 = self.browser.find_element(*LoginPageLocators.password_register_confirm)
-        input1.send_keys("gggg12357354163425")
+        confirm_password_register_input = self.browser.find_element(*LoginPageLocators.password_register_confirm)
+        confirm_password_register_input.send_keys("gggg12357354163425")
 
     def click_on_register(self):
-        button1 = self.browser.find_element(*LoginPageLocators.register_button)
-        button1.click()
+        register_button = self.browser.find_element(*LoginPageLocators.register_button)
+        register_button.click()
 
     def registration_successful(self):
         element = self.browser.find_element(*LoginPageLocators.registration_successful_msg)
@@ -80,16 +80,16 @@ class BasePage():
         assert element.text == "Спасибо за регистрацию!"
 
     def write_email_login(self):
-        input1 = self.browser.find_element(*LoginPageLocators.email_login)
-        input1.send_keys("test12757354341334@gmail.com")
+        email_login_input = self.browser.find_element(*LoginPageLocators.email_login)
+        email_login_input.send_keys("test12757354341334@gmail.com")
 
     def write_password_login(self):
-        input1 = self.browser.find_element(*LoginPageLocators.password_login)
-        input1.send_keys("gggg12357354163425")
+        password_login_input = self.browser.find_element(*LoginPageLocators.password_login)
+        password_login_input.send_keys("gggg12357354163425")
 
     def click_on_login(self):
-        button1 = self.browser.find_element(*LoginPageLocators.login_button)
-        button1.click()
+        login_button = self.browser.find_element(*LoginPageLocators.login_button)
+        login_button.click()
 
     def login_successful(self):
         element = self.browser.find_element(*LoginPageLocators.login_successful_msg)
