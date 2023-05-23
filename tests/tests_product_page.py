@@ -1,18 +1,8 @@
 import pytest
 from pages.catalog_page import CatalogPage
-from selenium import webdriver
 
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
-
-
-@pytest.fixture(scope="function")
-def browser():
-    print("\nstart browser for test..")
-    browser = webdriver.Chrome()
-    yield browser
-    print("\nquit browser..")
-    browser.quit()
 
 
 @pytest.mark.product
