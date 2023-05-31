@@ -27,7 +27,7 @@ pip install -r .\requirements.txt
 ```
 pytest tests
 ```
-## Запуск через PyCharm
+## Через PyCharm:
 1. Клонировать и открыть проект
 2. Создать виртуальное окружение
 3. Установить модули из requirements.txt
