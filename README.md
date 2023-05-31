@@ -1,5 +1,6 @@
-# Набор автотестов на сайт http://selenium1py.pythonanywhere.com/ru/
+# QAA Tests portfolio
 
+Набор автотестов на сайт http://selenium1py.pythonanywhere.com/ru/
 Сделан по результатам курса https://stepik.org/course/575/syllabus
 
 Используется selenium и pytest
