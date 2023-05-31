@@ -1,13 +1,7 @@
 # Набор автотестов на сайт http://selenium1py.pythonanywhere.com/ru/
 
 Сделан по результатам курса https://stepik.org/course/575/syllabus
-
-# Requirements
-Устанавливать из requirements.txt:
-
-selenium
-
-pytest
+Используется selenium и pytest
 
 # Запуск
 ## Через терминал:
@@ -33,3 +27,9 @@ pip install -r .\requirements.txt
 ```
 pytest tests
 ```
+## Запуск через PyCharm
+1. Клонировать и открыть проект
+2. Создать виртуальное окружение
+3. Установить модули из requirements.txt
+4. Убедиться, что pytest выбран как **Default test runner** в **Settings > Tools > Python Integrated Tools**
+5. Запустить тесты через любую конфигурацию pytest
