@@ -4,7 +4,9 @@
 
 # Requirements
 Устанавливать из requirements.txt:
+
 selenium
+
 pytest
 
 # Запуск
